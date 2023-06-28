@@ -1,0 +1,28 @@
+Voici quelques commandes de base pour interagir avec une base de données MySQL :
+
+! N'oubliez pas de lancer le programme mysql dans XAMPP
+
+**Version de MySQL** :
+
+    mysql --version
+
+** Connexion à mysql** :
+
+    mysql -u root -p
+
+**Deconnexion de mysql** :
+
+    quit;
+    ou
+    exit;
+
+**Affichage des bases de données** :
+
+    SHOW DATABASES;
+
+**Creation d'un base de données** :
+
+    CREATE DATABASE nom_base_de_donnee;
+
+**Supression d'une base de données** :
+    DROP DATABASE nom_base_de_donnee;
