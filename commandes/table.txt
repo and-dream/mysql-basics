@@ -1,0 +1,81 @@
+**Affichage des tables** :
+    SHOW TABLES;
+
+**Création d'une table** :
+    CREATE TABLE nom_de_la_table.
+    
+    ex : CREATE TABLE nom_table ();
+
+
+    CREATE TABLE nom_table (
+        nom VARCHAR(255),
+        age INT,
+        email VARCHAR(255)
+    );
+
+
+    information obligatoire : nom du champ et le type du champ
+
+**Affichage la structure de ma table** :
+    DESCRIBE nom_de_la_table;
+
+**Affichage de la requête de création de la table** :
+    SHOW CREATE TABLE   nom_de_la_table.
+
+**Suppression d'une table** :
+    DROP TABLE nom_de_la_table;
+
+
+exo
+creer une base de données ecommerce
+afficher vos bases de donnees
+selectionner la base en question
+creer table produit
+    id entier
+    nom type à choisir
+    description type à choisir
+    prix type à choisir
+    statut booleen
+
+
+    CREATE TABLE produit (
+        id INT,
+        nom VARCHAR(255),
+        description TEXT,
+        prix DECIMAL,
+        statut BOOLEAN
+    );
+
+
+    CREATE TABLE produit (
+        id INT,
+        nom VARCHAR(255),
+        description TEXT,
+        prix DECIMAL(8,2),
+        statut BOOLEAN
+    );
+
+CREATE TABLE user (    
+    ->     id int UNSIGNED PRIMARY KEY AUTO_INCREMENT ,
+    ->     nom VARCHAR(255) NOT NULL,
+    ->     prenom VARCHAR(255) NOT NULL,
+    ->     email VARCHAR(255) NOT NULL UNIQUE,     
+    ->     pseudo VARCHAR(255) DEFAULT 'JOHN DOE',
+    ->     age tinyint UNSIGNED CHECK (age >0)
+    ->     );
+
+**Insertion de données dans une table** :
+    INSERT INTO nom_table (colonne1, colonne2, colonne3, ...)
+    VALUES (valeur1, valeur2, valeur3, ...);
+
+    INSERT INTO user (nom, prenom, email, age) VALUES ('EDJEKOUNE', 'Rachid', 'edjek@gmail.com', 40);
+
+**Sélection de données d'une table** :
+    SELECT *
+    FROM nom_table;
+
+
+
+
+
+

@@ -1,0 +1,12 @@
+**Ajouter une colonne** :
+    ALTER TABLE nom_table ADD nom_colonne type_de_donnee;
+
+**Supprimer une colonne** :
+    ALTER TABLE nom_table DROP COLUMN nom_colomne;
+
+**Modifier le type de donnée d'une colonne** :
+    ALTER TABLE nom_table MODIFY nom_colonne nouveau_type nouvelle_contrainte;
+
+**Modifier le nom d'une colonne** :
+    ALTER TABLE nom_colonne nouveau_nom type_de_donnee;
+

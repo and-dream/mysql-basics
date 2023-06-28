@@ -1,0 +1,42 @@
+Voici un exemple d'exercice avec une base de données pour des figurines Avengers :
+
+1. Créez une base de données avec le nom `avengers_db` :
+
+
+2. Sélectionnez la base de données nouvellement créée :
+
+
+3. Créez la table "Figurines" avec des colonnes telles que "id" (clé primaire), "nom", "super_pouvoir", "année_sortie" et "description" :
+CREATE TABLE Figurines (
+    id int PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    nom VARCHAR(255),
+    super_pouvoir VARCHAR(255),
+    annee_sortie YEAR,
+    description TEXT
+);
+
+
+4. Insérez des données dans la table "Figurines" pour représenter des figurines Avengers :
+
+  ('Iron Man', 'Armure surpuissante', 2008, 'Milliardaire et génie inventeur.'),
+  ('Captain America', 'Force et endurance surhumaines', 2011, 'Héros emblématique de la Seconde Guerre mondiale.'),
+  ('Thor', 'Contrôle de la foudre et marteau magique', 2011, 'Dieu nordique du tonnerre et prince d\'Asgard.'),
+  ('Hulk', 'Force et résistance surhumaines', 2008, 'Scientifique transformé en monstre vert lorsqu\'il est en colère.'),
+  ('Black Widow', 'Expert en arts martiaux et espionnage', 2010, 'Agent secret russe doté de grandes compétences.'),
+  ('Black Panther', 'Force, vitesse et agilité surhumaines', 2018, 'Roi du Wakanda et protecteur de son peuple.');
+
+  INSERT INTO Figurines (nom, super_pouvoir, annee_sortie, description)
+  VALUES   ('Iron Man', 'Armure surpuissante', 2008, 'Milliardaire et génie inventeur.'),
+  ('Captain America', 'Force et endurance surhumaines', 2011, 'Héros emblématique de la Seconde Guerre mondiale.'),
+  ('Thor', 'Contrôle de la foudre et marteau magique', 2011, 'Dieu nordique du tonnerre et prince d\'Asgard.'),
+  ('Hulk', 'Force et résistance surhumaines', 2008, 'Scientifique transformé en monstre vert lorsqu\'il est en colère.'),
+  ('Black Widow', 'Expert en arts martiaux et espionnage', 2010, 'Agent secret russe doté de grandes compétences.'),
+  ('Black Panther', 'Force, vitesse et agilité surhumaines', 2018, 'Roi du Wakanda et protecteur de son peuple.');
+
+
+5. Effectuez des requêtes pour afficher les figurines Avengers :
+
+  - Afficher toutes les figurines :
+
+
+  - Afficher les figurines sorties après 2010 :
