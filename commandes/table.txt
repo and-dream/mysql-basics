@@ -75,6 +75,17 @@ CREATE TABLE user (
     FROM nom_table;
 
 
+**Mettre à jour les données dans une table** :
+    UPDATE nom_de_la_table
+    SET nom_colonne = nouvelle_valeur, nom_colonne2 = nouvelle_valeur2
+    WHERE condition;
+
+
+**Suppression de données dans une table** :
+    DELETE FROM nom_table;
+
+
+
 
 
 
