@@ -10,3 +10,5 @@
 **Modifier le nom d'une colonne** :
     ALTER TABLE nom_colonne nouveau_nom type_de_donnee;
 
+**Ajouter une contrainte FOREIGN KEY clé secondaire** :
+ALTER TABLE nom_table ADD CONSTRAINT nom_contrainte FOREIGN KEY (colonne) REFERENCES autre_table (colonne_reference)
