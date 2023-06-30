@@ -12,3 +12,8 @@
 
 **Ajouter une contrainte FOREIGN KEY clé secondaire** :
 ALTER TABLE nom_table ADD CONSTRAINT nom_contrainte FOREIGN KEY (colonne) REFERENCES autre_table (colonne_reference)
+
+**Supprimer une contrainte FOREIGN KEY** :
+ALTER TABLE nom_table DROP FOREIGN KEY nom_contrainte;
+
+

@@ -4,7 +4,9 @@ CREATE TABLE movie (
     description TEXT,
     release_date DATE,
     duration TIME,
-    rating TINYINT
+    rating TINYINT,
+    director_id INT UNSIGNED,
+    CONSTRAINT fk_director_id FOREIGN KEY (director_id) REFERENCES director(id)
 );
 
 
@@ -21,5 +23,33 @@ CREATE TABLE actor (
     lastname VARCHAR(255),
     birthday DATE
 );
+
+INSERT INTO movie (title, description, release_date, duration, rating, director_id)
+VALUES ('Le loup de Wall Street', 'L''ascension vers la fortune d''un courtier en bourse, Jordan Belfort, et ses malversations au cœur des années 1980, le menant à la chute et à une forme de rédemption.', '2013-12-25', 179, 4, '1');
+
+
+
+SELECT * FROM movie JOIN director ON director_di = director.id;
+
+Ajouter d'autres films
+
+INSERT INTO movie (title, description, release_date, duration, rating, director_id)
+VALUES ('Les affranchis', 'Le film retrace l''ascension et la chute d''Henry Hill et deux de ses amis, Jimmy Conway et Tommy DeVito, des maffieux appartenant à la famille Lucchese, l''une des six familles mafieuses de New York.', '1990-06-07', 146, 3, 1);
+
+
+INSERT INTO movie (title, description, release_date, duration, rating, director_id)
+VALUES ('Gladiator', 'L''intrigue raconte la chute du général romain Maximus Decimus, destiné à devenir le successeur de Marc Aurèle, avant que l''empereur ne soit assassiné et le général brutalement trahi et laissé pour mort par l''ambitieux et maléfique Commode.', '2000-06-20', 155, 4, 2);
+
+INSERT INTO movie (title, description, release_date, duration, rating, director_id) VALUES ('Blade Runner', 'En novembre 2019, dans un Los Angeles pluvieux et crépusculaire, perpétuellement couvert de smog. La planète a vu disparaitre la quasi-totalité de la faune, à la suite de la surexploitation, de la pollution, des guerres et du dérèglement climatique d''origine anthropique.', '1982-09-15',111,2,2);
+
+
+
+Ajouter d'autres réalisateurs
+
+Afficher tous les films avec du réal et le nom des acteurs, mais uniquement les films avec une note sup à 3
+
+Afficher tous les films avec du réal et le nom des acteurs, mais uniquement les films avec une note sup à 3 et une durée sup à 120 minutes
+
+
 
 

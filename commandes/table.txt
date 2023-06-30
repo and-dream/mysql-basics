@@ -82,11 +82,28 @@ CREATE TABLE user (
 
 
 **Suppression de données dans une table** :
-    DELETE FROM nom_table;
+
+    DELETE FROM nom_table WHERE conditions;
+
+
+**Jointure entre deux tables** :
+SELECT * FROM nom_table JOIN autre_table ON 
+
+** Alias explicite** :
+SELECT un_nom.id nom_ AS 'modifier affichage'
+FROM nom_de_la_table AS un_nom
+JOIN autre_table AS autre_nom ON champs_enfant = champ_parent;
+
+** Alias implicite** :
+SELECT un_nom.id nom_ 'modifier affichage'
+FROM nom_de_la_table AS un_nom
+JOIN autre_table autre_nom ON champs_enfant = champ_parent;
 
 
 
 
 
 
+Donner un alias aux champs
+SELECT d.id 'id du réalisateur', title, firstname, lastname FROM movie JOIN director d ON director_di = director.id;
 
